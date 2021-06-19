@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07BAB3D0267E777100DFA62F /* SharePlayCombineAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BAB3CF267E777100DFA62F /* SharePlayCombineAppApp.swift */; };
+		07BAB3D2267E777100DFA62F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BAB3D1267E777100DFA62F /* ContentView.swift */; };
+		07BAB3D4267E777200DFA62F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07BAB3D3267E777200DFA62F /* Assets.xcassets */; };
+		07BAB3D7267E777200DFA62F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07BAB3D6267E777200DFA62F /* Preview Assets.xcassets */; };
+		07BAB3E1267E777300DFA62F /* SharePlayCombineAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BAB3E0267E777300DFA62F /* SharePlayCombineAppTests.swift */; };
+		07BAB3EB267E777300DFA62F /* SharePlayCombineAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BAB3EA267E777300DFA62F /* SharePlayCombineAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07BAB3DD267E777300DFA62F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07BAB3C4267E777100DFA62F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07BAB3CB267E777100DFA62F;
+			remoteInfo = SharePlayCombineApp;
+		};
+		07BAB3E7267E777300DFA62F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07BAB3C4267E777100DFA62F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07BAB3CB267E777100DFA62F;
+			remoteInfo = SharePlayCombineApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07BAB3CC267E777100DFA62F /* SharePlayCombineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharePlayCombineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07BAB3CF267E777100DFA62F /* SharePlayCombineAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePlayCombineAppApp.swift; sourceTree = "<group>"; };
+		07BAB3D1267E777100DFA62F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		07BAB3D3267E777200DFA62F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07BAB3D6267E777200DFA62F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07BAB3DC267E777200DFA62F /* SharePlayCombineAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharePlayCombineAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07BAB3E0267E777300DFA62F /* SharePlayCombineAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePlayCombineAppTests.swift; sourceTree = "<group>"; };
+		07BAB3E6267E777300DFA62F /* SharePlayCombineAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharePlayCombineAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07BAB3EA267E777300DFA62F /* SharePlayCombineAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePlayCombineAppUITests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07BAB3C9267E777100DFA62F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07BAB3D9267E777200DFA62F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07BAB3E3267E777300DFA62F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07BAB3C3267E777100DFA62F = {
+			isa = PBXGroup;
+			children = (
+				07BAB3CE267E777100DFA62F /* SharePlayCombineApp */,
+				07BAB3DF267E777300DFA62F /* SharePlayCombineAppTests */,
+				07BAB3E9267E777300DFA62F /* SharePlayCombineAppUITests */,
+				07BAB3CD267E777100DFA62F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07BAB3CD267E777100DFA62F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07BAB3CC267E777100DFA62F /* SharePlayCombineApp.app */,
+				07BAB3DC267E777200DFA62F /* SharePlayCombineAppTests.xctest */,
+				07BAB3E6267E777300DFA62F /* SharePlayCombineAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07BAB3CE267E777100DFA62F /* SharePlayCombineApp */ = {
+			isa = PBXGroup;
+			children = (
+				07BAB3CF267E777100DFA62F /* SharePlayCombineAppApp.swift */,
+				07BAB3D1267E777100DFA62F /* ContentView.swift */,
+				07BAB3D3267E777200DFA62F /* Assets.xcassets */,
+				07BAB3D5267E777200DFA62F /* Preview Content */,
+			);
+			path = SharePlayCombineApp;
+			sourceTree = "<group>";
+		};
+		07BAB3D5267E777200DFA62F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				07BAB3D6267E777200DFA62F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		07BAB3DF267E777300DFA62F /* SharePlayCombineAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				07BAB3E0267E777300DFA62F /* SharePlayCombineAppTests.swift */,
+			);
+			path = SharePlayCombineAppTests;
+			sourceTree = "<group>";
+		};
+		07BAB3E9267E777300DFA62F /* SharePlayCombineAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07BAB3EA267E777300DFA62F /* SharePlayCombineAppUITests.swift */,
+			);
+			path = SharePlayCombineAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07BAB3CB267E777100DFA62F /* SharePlayCombineApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07BAB3EE267E777300DFA62F /* Build configuration list for PBXNativeTarget "SharePlayCombineApp" */;
+			buildPhases = (
+				07BAB3C8267E777100DFA62F /* Sources */,
+				07BAB3C9267E777100DFA62F /* Frameworks */,
+				07BAB3CA267E777100DFA62F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharePlayCombineApp;
+			productName = SharePlayCombineApp;
+			productReference = 07BAB3CC267E777100DFA62F /* SharePlayCombineApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07BAB3DB267E777200DFA62F /* SharePlayCombineAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07BAB3F1267E777300DFA62F /* Build configuration list for PBXNativeTarget "SharePlayCombineAppTests" */;
+			buildPhases = (
+				07BAB3D8267E777200DFA62F /* Sources */,
+				07BAB3D9267E777200DFA62F /* Frameworks */,
+				07BAB3DA267E777200DFA62F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07BAB3DE267E777300DFA62F /* PBXTargetDependency */,
+			);
+			name = SharePlayCombineAppTests;
+			productName = SharePlayCombineAppTests;
+			productReference = 07BAB3DC267E777200DFA62F /* SharePlayCombineAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07BAB3E5267E777300DFA62F /* SharePlayCombineAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07BAB3F4267E777300DFA62F /* Build configuration list for PBXNativeTarget "SharePlayCombineAppUITests" */;
+			buildPhases = (
+				07BAB3E2267E777300DFA62F /* Sources */,
+				07BAB3E3267E777300DFA62F /* Frameworks */,
+				07BAB3E4267E777300DFA62F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07BAB3E8267E777300DFA62F /* PBXTargetDependency */,
+			);
+			name = SharePlayCombineAppUITests;
+			productName = SharePlayCombineAppUITests;
+			productReference = 07BAB3E6267E777300DFA62F /* SharePlayCombineAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07BAB3C4267E777100DFA62F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					07BAB3CB267E777100DFA62F = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					07BAB3DB267E777200DFA62F = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 07BAB3CB267E777100DFA62F;
+					};
+					07BAB3E5267E777300DFA62F = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 07BAB3CB267E777100DFA62F;
+					};
+				};
+			};
+			buildConfigurationList = 07BAB3C7267E777100DFA62F /* Build configuration list for PBXProject "SharePlayCombineApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07BAB3C3267E777100DFA62F;
+			productRefGroup = 07BAB3CD267E777100DFA62F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07BAB3CB267E777100DFA62F /* SharePlayCombineApp */,
+				07BAB3DB267E777200DFA62F /* SharePlayCombineAppTests */,
+				07BAB3E5267E777300DFA62F /* SharePlayCombineAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07BAB3CA267E777100DFA62F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07BAB3D7267E777200DFA62F /* Preview Assets.xcassets in Resources */,
+				07BAB3D4267E777200DFA62F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07BAB3DA267E777200DFA62F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07BAB3E4267E777300DFA62F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07BAB3C8267E777100DFA62F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07BAB3D2267E777100DFA62F /* ContentView.swift in Sources */,
+				07BAB3D0267E777100DFA62F /* SharePlayCombineAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07BAB3D8267E777200DFA62F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07BAB3E1267E777300DFA62F /* SharePlayCombineAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07BAB3E2267E777300DFA62F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07BAB3EB267E777300DFA62F /* SharePlayCombineAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07BAB3DE267E777300DFA62F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07BAB3CB267E777100DFA62F /* SharePlayCombineApp */;
+			targetProxy = 07BAB3DD267E777300DFA62F /* PBXContainerItemProxy */;
+		};
+		07BAB3E8267E777300DFA62F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07BAB3CB267E777100DFA62F /* SharePlayCombineApp */;
+			targetProxy = 07BAB3E7267E777300DFA62F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07BAB3EC267E777300DFA62F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07BAB3ED267E777300DFA62F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07BAB3EF267E777300DFA62F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SharePlayCombineApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokid.SharePlayCombineApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07BAB3F0267E777300DFA62F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SharePlayCombineApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokid.SharePlayCombineApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		07BAB3F2267E777300DFA62F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokid.SharePlayCombineAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SharePlayCombineApp.app/SharePlayCombineApp";
+			};
+			name = Debug;
+		};
+		07BAB3F3267E777300DFA62F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokid.SharePlayCombineAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SharePlayCombineApp.app/SharePlayCombineApp";
+			};
+			name = Release;
+		};
+		07BAB3F5267E777300DFA62F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokid.SharePlayCombineAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SharePlayCombineApp;
+			};
+			name = Debug;
+		};
+		07BAB3F6267E777300DFA62F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokid.SharePlayCombineAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SharePlayCombineApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07BAB3C7267E777100DFA62F /* Build configuration list for PBXProject "SharePlayCombineApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07BAB3EC267E777300DFA62F /* Debug */,
+				07BAB3ED267E777300DFA62F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07BAB3EE267E777300DFA62F /* Build configuration list for PBXNativeTarget "SharePlayCombineApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07BAB3EF267E777300DFA62F /* Debug */,
+				07BAB3F0267E777300DFA62F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07BAB3F1267E777300DFA62F /* Build configuration list for PBXNativeTarget "SharePlayCombineAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07BAB3F2267E777300DFA62F /* Debug */,
+				07BAB3F3267E777300DFA62F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07BAB3F4267E777300DFA62F /* Build configuration list for PBXNativeTarget "SharePlayCombineAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07BAB3F5267E777300DFA62F /* Debug */,
+				07BAB3F6267E777300DFA62F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07BAB3C4267E777100DFA62F /* Project object */;
+}
