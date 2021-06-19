@@ -13,6 +13,8 @@
 		07BAB3D7267E777200DFA62F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07BAB3D6267E777200DFA62F /* Preview Assets.xcassets */; };
 		07BAB3E1267E777300DFA62F /* SharePlayCombineAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BAB3E0267E777300DFA62F /* SharePlayCombineAppTests.swift */; };
 		07BAB3EB267E777300DFA62F /* SharePlayCombineAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BAB3EA267E777300DFA62F /* SharePlayCombineAppUITests.swift */; };
+		07BAB3F8267E7A2800DFA62F /* TypeTogether.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BAB3F7267E7A2800DFA62F /* TypeTogether.swift */; };
+		07BAB3FB267E81BE00DFA62F /* Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BAB3FA267E81BE00DFA62F /* Count.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 		07BAB3E0267E777300DFA62F /* SharePlayCombineAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePlayCombineAppTests.swift; sourceTree = "<group>"; };
 		07BAB3E6267E777300DFA62F /* SharePlayCombineAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharePlayCombineAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07BAB3EA267E777300DFA62F /* SharePlayCombineAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePlayCombineAppUITests.swift; sourceTree = "<group>"; };
+		07BAB3F7267E7A2800DFA62F /* TypeTogether.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTogether.swift; sourceTree = "<group>"; };
+		07BAB3F9267E7C4300DFA62F /* SharePlayCombineApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SharePlayCombineApp.entitlements; sourceTree = "<group>"; };
+		07BAB3FA267E81BE00DFA62F /* Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Count.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +97,11 @@
 		07BAB3CE267E777100DFA62F /* SharePlayCombineApp */ = {
 			isa = PBXGroup;
 			children = (
+				07BAB3F9267E7C4300DFA62F /* SharePlayCombineApp.entitlements */,
 				07BAB3CF267E777100DFA62F /* SharePlayCombineAppApp.swift */,
 				07BAB3D1267E777100DFA62F /* ContentView.swift */,
+				07BAB3F7267E7A2800DFA62F /* TypeTogether.swift */,
+				07BAB3FA267E81BE00DFA62F /* Count.swift */,
 				07BAB3D3267E777200DFA62F /* Assets.xcassets */,
 				07BAB3D5267E777200DFA62F /* Preview Content */,
 			);
@@ -254,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07BAB3F8267E7A2800DFA62F /* TypeTogether.swift in Sources */,
 				07BAB3D2267E777100DFA62F /* ContentView.swift in Sources */,
 				07BAB3D0267E777100DFA62F /* SharePlayCombineAppApp.swift in Sources */,
+				07BAB3FB267E81BE00DFA62F /* Count.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,9 +422,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SharePlayCombineApp/SharePlayCombineApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SharePlayCombineApp/Preview Content\"";
+				DEVELOPMENT_TEAM = KW8RLKUW3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -422,7 +435,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -430,6 +443,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gokid.SharePlayCombineApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,9 +455,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SharePlayCombineApp/SharePlayCombineApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SharePlayCombineApp/Preview Content\"";
+				DEVELOPMENT_TEAM = KW8RLKUW3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -451,7 +468,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +476,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gokid.SharePlayCombineApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,8 +488,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KW8RLKUW3C;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -494,8 +514,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KW8RLKUW3C;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -5,12 +5,28 @@
 //  Created by TJ Littlejohn on 6/19/21.
 //
 
+import GroupActivities
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+    @StateObject var count = Count()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack {
+            HStack {
+                Button("-", action: {count.decrementCount()})
+                Text("\(count.count)")
+                Button("+", action: {count.incrementCount()})
+            }
+            Button("Activate", action: { TypeTogether().activate() })
+        }
+        .task {
+            for await session in TypeTogether.sessions() {
+                count.configureGroupSession(session)
+            }
+        }
     }
 }
 
