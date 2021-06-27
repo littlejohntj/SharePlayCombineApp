@@ -10,10 +10,10 @@ import SwiftUI
 
 class GameState: ObservableObject {
     @Published var characters = [
-        "kirby",
-        "captain falcon",
-        "pikachu",
-        "mario"
+        Character(name: "kirby", status: .availible),
+        Character(name: "captain falcon", status: .availible),
+        Character(name: "pikachu", status: .availible),
+        Character(name: "mario", status: .availible)
     ]
 }
 
@@ -25,4 +25,17 @@ class GameViewModel: ObservableObject {
         print("\(character) clicked by <TODO USER>")
 //        publishCharacterSelected(character)
     }
+}
+
+enum ChacterSelectionStatus {
+    case availible
+    case taken
+    case mine
+}
+
+struct Character {
+    
+    let name: String
+    let status: ChacterSelectionStatus
+    
 }
