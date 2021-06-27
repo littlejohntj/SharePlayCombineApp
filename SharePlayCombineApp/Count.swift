@@ -42,7 +42,7 @@ class Count: ObservableObject {
                 do {
                     try await messenger.send( CountMessage(id: UUID(), count: count) )
                 } catch {
-                    // bleh
+                    print("Send failed: \(error)")
                 }
             }
         }
