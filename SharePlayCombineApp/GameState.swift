@@ -8,24 +8,29 @@
 import Combine
 import SwiftUI
 
+enum Characters: String {
+    case kirby
+    case captian
+    case pikachu
+    case mario
+}
+
 class GameState: ObservableObject {
-    var characters = [
-        Character(name: "kirby", status: .availible),
-        Character(name: "captain falcon", status: .availible),
-        Character(name: "pikachu", status: .availible),
-        Character(name: "mario", status: .availible)
+    @Published var characters = [
+        Character(name: "kirby"),
+        Character(name: "captain falcon"),
+        Character(name: "pikachu"),
+        Character(name: "mario")
   ]
 
 }
 
 class GameViewModel: ObservableObject {
     
-    var state = GameState()
+    @Published var state = GameState()
 
     func characterClicked(_ clicked: Character) {
-        print("clicked it")
-        self.state.characters = [Character(name: "pikachu", status: .availible)]
-        print(self.state.characters)
+        clicked.status = .mine
     }
 }
 
@@ -35,9 +40,13 @@ enum ChacterSelectionStatus {
     case mine
 }
 
-struct Character {
+class Character {
     
     let name: String
-    let status: ChacterSelectionStatus
+    var status: ChacterSelectionStatus = .availible
+    
+    init( name: String) {
+        self.name = name
+    }
     
 }

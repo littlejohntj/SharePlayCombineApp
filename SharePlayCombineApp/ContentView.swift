@@ -18,7 +18,7 @@ struct ContentView: View {
             ForEach(gameViewModel.state.characters, id: \.self.name) {character in
                 CharacterButton(
                     character: character,
-                    onCharacterPressed: gameViewModel.characterClicked
+                    buttonCliked: gameViewModel.characterClicked
                 )
             }
         }
@@ -28,11 +28,11 @@ struct ContentView: View {
 struct CharacterButton: View {
     
     let character: Character
-    let onCharacterPressed: (Character) -> Void
+    let buttonCliked: (Character) -> Void
     
     var body: some View {
         Button(character.name) {
-            onCharacterPressed(character)
+            buttonCliked(character)
         }
         .buttonStyle( CharacterButtonStyle(character: character) )
         .padding()
@@ -48,7 +48,7 @@ struct CharacterButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding()
-            .background( character.name.split(separator: " ").count > 1 ? Color.red : Color.blue )
+            .background( character.status == .mine ? Color.blue : Color.red )
             .foregroundColor(.white)
             .clipShape(Capsule())
             .scaleEffect(configuration.isPressed ? 1.2 : 1)
