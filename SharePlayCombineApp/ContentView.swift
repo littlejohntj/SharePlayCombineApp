@@ -17,8 +17,10 @@ struct ContentView: View {
         VStack {
             HStack {
                 Button("-", action: {count.decrementCount()})
+                    .padding()
                 Text("\(count.count)")
                 Button("+", action: {count.incrementCount()})
+                    .padding()
             }
             Button("Activate", action: { TypeTogether().activate() })
                 .padding()
