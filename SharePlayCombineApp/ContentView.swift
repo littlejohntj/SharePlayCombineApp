@@ -21,7 +21,9 @@ struct ContentView: View {
                 Button("+", action: {count.incrementCount()})
             }
             Button("Activate", action: { TypeTogether().activate() })
+                .padding()
         }
+        .font(.largeTitle)
         .task {
             for await session in TypeTogether.sessions() {
                 count.configureGroupSession(session)
