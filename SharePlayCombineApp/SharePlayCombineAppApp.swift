@@ -11,7 +11,9 @@ import SwiftUI
 struct SharePlayCombineAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(
+//                gameViewModel: GameViewModel()
+            )
         }
     }
 }

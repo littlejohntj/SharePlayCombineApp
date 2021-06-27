@@ -9,17 +9,17 @@ import GroupActivities
 import SwiftUI
 import Combine
 
+
 struct ContentView: View {
     
+    // What is the difference between @StateObject / @ObservedObject?
+    // What is the proper way to model a ViewModel with SwiftUI for easiest array mutation
     @StateObject var gameViewModel = GameViewModel()
     
     var body: some View {
         VStack {
-            ForEach(gameViewModel.state.characters, id: \.self.name) {character in
-                CharacterButton(
-                    character: character,
-                    buttonCliked: gameViewModel.characterClicked
-                )
+            ForEach(gameViewModel.state.characters) { character in
+                CharacterButton(character: character, buttonCliked: gameViewModel.characterClicked)
             }
         }
     }
@@ -56,8 +56,8 @@ struct CharacterButtonStyle: ButtonStyle {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}

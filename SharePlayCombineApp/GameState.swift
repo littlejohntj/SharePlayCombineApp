@@ -28,9 +28,58 @@ class GameState: ObservableObject {
 class GameViewModel: ObservableObject {
     
     @Published var state = GameState()
+    
+    @Published var items = [
+        Thing("foo"),
+        Thing("bar")
+    ]
 
     func characterClicked(_ clicked: Character) {
-        clicked.status = .mine
+        self.state.characters = self.state.characters.map{ character in
+            if (character.status == .mine) {
+                character.status = .availible
+            }
+            return character
+        }
+        let characters = self.state.characters
+        
+        
+
+        let i = characters.firstIndex(where: {$0.id == clicked.id})!
+        let character = characters[i]
+        let status = character.status
+        
+        print(status)
+        
+        var newStatus: ChacterSelectionStatus = .mine
+        switch status {
+        case .mine:
+            newStatus = .availible
+        case .availible:
+            newStatus = .mine
+        case .taken:
+            fatalError("TJ says get rekt")
+        }
+        
+        print(newStatus)
+        
+        self.state.characters[i].status = newStatus
+    }
+    
+    func thingClicked(_ thing: Thing) {
+//        thing.name = "was clicked dummy \(UUID().uuidString)"
+        items.append(Thing(UUID().uuidString))
+        items[0] = Thing("whatever")
+    }
+}
+
+
+struct Thing: Identifiable {
+    var id = UUID()
+    var name: String
+    
+    init(_ name: String) {
+        self.name = name
     }
 }
 
@@ -40,9 +89,10 @@ enum ChacterSelectionStatus {
     case mine
 }
 
-class Character {
+class Character: Identifiable {
     
-    let name: String
+    var id = UUID()
+    var name: String
     var status: ChacterSelectionStatus = .availible
     
     init( name: String) {
