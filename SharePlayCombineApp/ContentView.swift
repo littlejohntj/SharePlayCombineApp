@@ -11,6 +11,8 @@ import Combine
 
 struct ContentView: View {
     @StateObject var count = Count()
+
+    
     
     var body: some View {
         
@@ -26,6 +28,7 @@ struct ContentView: View {
                 .padding()
         }
         .font(.largeTitle)
+        
         .task {
             for await session in TypeTogether.sessions() {
                 count.configureGroupSession(session)

@@ -48,6 +48,19 @@ class Count: ObservableObject {
         }
     }
     
+/*
+ 
+ [message received publish subject<====
+ 
+ pipeline 1
+ 
+ pipeline 2
+ 
+ pipeline 3
+ 
+ 
+ */
+    
     func configureGroupSession( _ groupSession: GroupSession<TypeTogether> ) {
         count = 0
         self.groupSession = groupSession
@@ -59,12 +72,38 @@ class Count: ObservableObject {
                 self?.handle(message: message)
             }
         }
+       
+        /**
+
+         More developer friendly API here
+         
+         observe(CharacterSelectionMessage.self) { message in
+        
+         }
+             .sink { characterSelectedMessage in handlerItHere}
+         
+         task tracking would have to happen by the observe call class
+    
+         */
+        
+        let characterSelectedMessageListenerTask = detach { [weak self] in
+            for await (message, _) in messenger.messages(of: CharacterSelectionMessage.self) {
+                self?.handleCharacterChosenMessage(message: message)
+            }
+        }
         tasks.insert(countTask)
+        tasks.insert(characterSelectedMessageListenerTask)
         
         groupSession.join()
     }
     
     func handle( message: CountMessage ) {
+        DispatchQueue.main.async {
+            self.count = message.count
+        }
+    }
+    
+    func handle( message: CharacterSelectionMessage ) {
         DispatchQueue.main.async {
             self.count = message.count
         }
