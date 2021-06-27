@@ -8,8 +8,8 @@
 import Foundation
 import SwiftUI
 
-class GroupCountViewModel: ObservableObject {
-    private var groupCountViewModel = ObservableGroupActivity<CountMessage>()
-    
-    
-}
+//class GroupCountViewModel: ObservableObject {
+//    private var groupCountViewModel = ObservableGroupActivity<CountMessage>()
+//    
+//    
+//}

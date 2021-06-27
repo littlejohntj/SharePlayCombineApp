@@ -16,6 +16,7 @@
 		07BAB3F8267E7A2800DFA62F /* TypeTogether.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BAB3F7267E7A2800DFA62F /* TypeTogether.swift */; };
 		07BAB3FB267E81BE00DFA62F /* Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BAB3FA267E81BE00DFA62F /* Count.swift */; };
 		6D9869762688FCAB000B7E1D /* GroupCountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9869752688FCAB000B7E1D /* GroupCountViewModel.swift */; };
+		6D98697826890650000B7E1D /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D98697726890650000B7E1D /* GameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		07BAB3F9267E7C4300DFA62F /* SharePlayCombineApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SharePlayCombineApp.entitlements; sourceTree = "<group>"; };
 		07BAB3FA267E81BE00DFA62F /* Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Count.swift; sourceTree = "<group>"; };
 		6D9869752688FCAB000B7E1D /* GroupCountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCountViewModel.swift; sourceTree = "<group>"; };
+		6D98697726890650000B7E1D /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				07BAB3D3267E777200DFA62F /* Assets.xcassets */,
 				07BAB3D5267E777200DFA62F /* Preview Content */,
 				6D9869752688FCAB000B7E1D /* GroupCountViewModel.swift */,
+				6D98697726890650000B7E1D /* GameState.swift */,
 			);
 			path = SharePlayCombineApp;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				07BAB3F8267E7A2800DFA62F /* TypeTogether.swift in Sources */,
 				07BAB3D2267E777100DFA62F /* ContentView.swift in Sources */,
 				07BAB3D0267E777100DFA62F /* SharePlayCombineAppApp.swift in Sources */,
+				6D98697826890650000B7E1D /* GameState.swift in Sources */,
 				6D9869762688FCAB000B7E1D /* GroupCountViewModel.swift in Sources */,
 				07BAB3FB267E81BE00DFA62F /* Count.swift in Sources */,
 			);

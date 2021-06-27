@@ -10,28 +10,15 @@ import SwiftUI
 import Combine
 
 struct ContentView: View {
-    @StateObject var count = Count()
-
     
+    @StateObject var gameViewModel = GameViewModel()
     
     var body: some View {
-        
         VStack {
-            HStack {
-                Button("-", action: {count.decrementCount()})
-                    .padding()
-                Text("\(count.count)")
-                Button("+", action: {count.incrementCount()})
-                    .padding()
-            }
-            Button("Activate", action: { TypeTogether().activate() })
-                .padding()
-        }
-        .font(.largeTitle)
-        
-        .task {
-            for await session in TypeTogether.sessions() {
-                count.configureGroupSession(session)
+            ForEach(gameViewModel.state.characters, id: \.self) {character in
+                Button(character) {
+                    gameViewModel.characterSelected(character)
+                }
             }
         }
     }

@@ -2,7 +2,7 @@ Started the README
 
 Scope of character selection work
 
-A static number of characters on screen
+✅A static number of characters on screen
 Represent characters as buttons
 We want visual indication as to who has selected a character
 If a character has been selected,

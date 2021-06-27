@@ -86,13 +86,13 @@ class Count: ObservableObject {
     
          */
         
-        let characterSelectedMessageListenerTask = detach { [weak self] in
-            for await (message, _) in messenger.messages(of: CharacterSelectionMessage.self) {
-                self?.handleCharacterChosenMessage(message: message)
-            }
-        }
+//        let characterSelectedMessageListenerTask = detach { [weak self] in
+//            for await (message, _) in messenger.messages(of: CharacterSelectionMessage.self) {
+//                self?.handleCharacterChosenMessage(message: message)
+//            }
+//        }
         tasks.insert(countTask)
-        tasks.insert(characterSelectedMessageListenerTask)
+//        tasks.insert(characterSelectedMessageListenerTask)
         
         groupSession.join()
     }
@@ -103,10 +103,10 @@ class Count: ObservableObject {
         }
     }
     
-    func handle( message: CharacterSelectionMessage ) {
-        DispatchQueue.main.async {
-            self.count = message.count
-        }
-    }
+//    func handle( message: CharacterSelectionMessage ) {
+//        DispatchQueue.main.async {
+//            self.count = message.count
+//        }
+//    }
     
 }
