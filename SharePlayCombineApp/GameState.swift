@@ -9,17 +9,13 @@ import Combine
 import SwiftUI
 
 class GameState: ObservableObject {
-  private let characters = [
+   @Published var characters = [
         Character(name: "kirby", status: .availible),
         Character(name: "captain falcon", status: .availible),
         Character(name: "pikachu", status: .availible),
         Character(name: "mario", status: .availible)
-  ].reduce(into: [:]) { dict, character in
-      dict[character.name] = character
-  }
+  ]
 
-    
-  
 }
 
 class GameViewModel: ObservableObject {
@@ -27,7 +23,9 @@ class GameViewModel: ObservableObject {
     @Published var state = GameState()
 
     func characterClicked(_ clicked: Character) {
-        self.characters
+        print("clicked it")
+        self.state.characters = [Character(name: "pikachu", status: .availible)]
+        print(self.state.characters)
     }
 }
 
