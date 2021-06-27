@@ -16,7 +16,10 @@ struct ContentView: View {
     var body: some View {
         VStack {
             ForEach(gameViewModel.state.characters, id: \.self.name) {character in
-                CharacterButton(character: character)
+                CharacterButton(
+                    character: character,
+                    onCharacterPressed: gameViewModel.characterClicked
+                )
             }
         }
     }
@@ -25,10 +28,11 @@ struct ContentView: View {
 struct CharacterButton: View {
     
     let character: Character
+    let onCharacterPressed: (Character) -> Void
     
     var body: some View {
         Button(character.name) {
-            print("selected \(character)")
+            onCharacterPressed(character)
         }
         .buttonStyle( CharacterButtonStyle(character: character) )
         .padding()
