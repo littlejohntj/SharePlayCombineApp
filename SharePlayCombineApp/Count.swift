@@ -65,7 +65,9 @@ class Count: ObservableObject {
     }
     
     func handle( message: CountMessage ) {
-        count = message.count
+        DispatchQueue.main.async {
+            self.count = message.count
+        }
     }
     
 }
